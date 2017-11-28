@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{842AD257-F819-4074-A179-130C566819BC}</ProjectGuid>
+    <RootNamespace>XFace_DNN</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+    <ExecutablePath>./pthreads2.9.1/dll/x64;../../3rdparty\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;$(IncludePath)</IncludePath>
+    <ReferencePath>./pthreads2.9.1/dll/x64;../../3rdparty/bin;$(ReferencePath)</ReferencePath>
+    <LibraryPath>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Intel\Composer XE 2013\mkl\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Intel\Composer XE 2013\mkl\lib\intel64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>./pthreads2.9.1/dll/x64;../../3rdparty\bin;$(ExecutablePath)</ExecutablePath>
+    <ReferencePath>./pthreads2.9.1/dll/x64;../../3rdparty/bin;$(ReferencePath)</ReferencePath>
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_VARIADIC_MAX=10;WIN32;_WINDOWS;_DEBUG;_VARIADIC_MAX=10;USE_CUDNN;USE_OPENCV;_ALLOW_KEYWORD_MACROS;GLOG_NO_ABBREVIATED_SEVERITIES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);../../3rdparty/include;../../src;../../include;./PIM/;./PIM/exp;./pthreads2.9.1/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+      <AdditionalOptions>-Zm134 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../../3rdparty/lib;../../3rdparty/bin;../../bin;./pthreads2.9.1/lib/x64;../x64/Release;C:\Program Files\Anaconda2\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcaffe_d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;glogd.lib;gflagsd.lib;shlwapi.lib;libprotobufd.lib;caffehdf5_hl_D.lib;caffehdf5_D.lib;caffezlibd.lib;lmdbd.lib;ntdll.lib;leveldbd.lib;snappy_staticd.lib;cudart.lib;curand.lib;cublas.lib;cudnn.lib;pthreadVC2.lib;libopenblas.dll.a;libplatform_d.lib;opencv_world310d.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_VARIADIC_MAX=10;USE_CUDNN;USE_OPENCV;_ALLOW_KEYWORD_MACROS;GLOG_NO_ABBREVIATED_SEVERITIES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../3rdparty/include;../../src;../../include;./PIM/;./PIM/exp;C:\Program Files %28x86%29\Intel\Composer XE 2013\mkl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../../3rdparty/lib;../../3rdparty/bin;../../bin;C:\Program Files %28x86%29\Intel\Composer XE 2013\mkl\lib\intel64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_VARIADIC_MAX=10;USE_CUDNN;USE_OPENCV;_ALLOW_KEYWORD_MACROS;GLOG_NO_ABBREVIATED_SEVERITIES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);../../3rdparty/include;../../src;../../include;./PIM/;./PIM/exp;./pthreads2.9.1/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm120 %(AdditionalOptions)</AdditionalOptions>
+      <OpenMPSupport>true</OpenMPSupport>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <AdditionalLibraryDirectories>../../3rdparty/lib;../../3rdparty/bin;../../bin;./pthreads2.9.1/lib/x64;../x64/Release;C:\Program Files\Anaconda2\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcaffe.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;glog.lib;gflags.lib;shlwapi.lib;libprotobuf.lib;caffehdf5_hl.lib;caffehdf5.lib;caffezlib.lib;lmdb.lib;ntdll.lib;leveldb.lib;snappy_static.lib;cudart.lib;curand.lib;cublas.lib;cudnn.lib;pthreadVC2.lib;libopenblas.dll.a;libplatform.lib;opencv_world310.lib;opencv_videostab310.lib;opencv_ts310.lib;opencv_videoio310.lib;opencv_video310.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Console.h" />
+    <ClInclude Include="CvImage.h" />
+    <ClInclude Include="Define.h" />
+    <ClInclude Include="Define_op.h" />
+    <ClInclude Include="EnrollDlg.h" />
+    <ClInclude Include="ImageProcess.h" />
+    <ClInclude Include="ImageProcessing.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\3D_face_shape.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\FaceRejector.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\face_rejector_parameters.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\FGlobalRegressor.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\FMat.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\Forest.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\IGlobalRegressor.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\IMat.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\LBFCommon.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\LBFTester.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\LBF_FaceAlignment.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\LBF_parameters_ver1.01.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\Node.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\targetver.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\Tree.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\Util.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\define_op.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\EyeDetection.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\EyeDetectionParameters.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\EyeDetectionParameters_MCT_20090427_c_15x15.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\EyeDetectionParameters_Visible.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\FacePlatformInterface.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\FA_ImageProcess.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\FD_header.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\FD_task.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\HP.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\HP_Core.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\HP_Data.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\HP_Defines.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\HP_Interface.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\IRMB2_CodeTable.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\irmb3_table.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD.H" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD2.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD2_data(9)_Accurate.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD2_data(9)_Fast.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD2_data(9)_Normal.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_Core.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_Defines.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_Enroll.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_Global.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_ImageProcessing.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_Init.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_Interface.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_Likelihood_New.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_Memory.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_Thread.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\Neon.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\pthread.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\sched.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\sdic_ImageProcess.h" />
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\semaphore.h" />
+    <ClInclude Include="PIM\libFaceRecognizer_V\inc\define.h" />
+    <ClInclude Include="PIM\libFaceRecognizer_V\inc\FaceAligner.h" />
+    <ClInclude Include="PIM\libFaceRecognizer_V\inc\FaceFeatureExtractor.h" />
+    <ClInclude Include="PIM\libFaceRecognizer_V\inc\FaceRecognizer_TL_JointBayesian.h" />
+    <ClInclude Include="PIM\libFaceRecognizer_V\inc\FR_Params.h" />
+    <ClInclude Include="PIM\libFaceRecognizer_V\inc\MeanFeature.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ShowEnrollmentDlg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="XFace_DNN.h" />
+    <ClInclude Include="XFace_DNNDoc.h" />
+    <ClInclude Include="XFace_DNNView.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="CvImage.cpp" />
+    <ClCompile Include="EnrollDlg.cpp" />
+    <ClCompile Include="ImageProcess.cpp" />
+    <ClCompile Include="ImageProcessing.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\FaceRejector.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\FGlobalRegressor.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\FMat.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\Forest.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\IGlobalRegressor.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\IMat.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\LBFCommon.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\LBFTester.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\Node.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\Tree.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\Util.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\EyeDetection.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\FA_ImageProcess.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\HP.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\HP_Core.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\HP_Core_SSE.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\HP_Init.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD.CPP" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_Core.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_Core_SSE.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_Enroll.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_Global.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_Image.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_ImageProcessing.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_ImageProcessing_SSE.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_Init.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_memory.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_Thread.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_Video.cpp" />
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\sdic_ImageProcess.cpp" />
+    <ClCompile Include="PIM\libFaceRecognizer_V\src\FaceAligner.cpp" />
+    <ClCompile Include="PIM\libFaceRecognizer_V\src\FaceFeatureExtractor.cpp" />
+    <ClCompile Include="PIM\libFaceRecognizer_V\src\FaceRecognizer_TL_JointBayesian.cpp" />
+    <ClCompile Include="ShowEnrollmentDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="XFace_DNN.cpp" />
+    <ClCompile Include="XFace_DNNDoc.cpp" />
+    <ClCompile Include="XFace_DNNView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="XFace_DNN.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\XFace_DNN.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\XFace_DNN.ico" />
+    <Image Include="res\XFace_DNNDoc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libcaffe\libcaffe.vcxproj">
+      <Project>{a9acef83-7b63-4574-a554-89ce869ea141}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="PIM\libPlatform\VisualStudio2008\libPlatform.vcxproj">
+      <Project>{be064539-7291-4821-978d-26f50a7987e3}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="XFace_DNN.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

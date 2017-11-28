@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="oem">
+      <UniqueIdentifier>{bcd8547f-6067-4de3-8271-847a6df6d119}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\ByteImage.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ImageProcess.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\matrix.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Performance.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PIMArray.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PIMBitmap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PIMBitmapConvert.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PIMByteStreamIO.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PIMColor.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PIMEdge.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PIMFile.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PIMList.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PIMLog.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PIMMask.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PIMMath.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PIMPaint.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PIMPoint.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PIMRect.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PIMString.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PIMUtil.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\VersionInfo.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\warp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\oem\PIMDeviceApi.win.c">
+      <Filter>oem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\EngFont.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SkinDetectValues.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\ByteImage.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\matrix.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\OlaRectApi.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\Performance.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\PIMBitmap.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\PIMBitmapConvert.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\PIMByteStreamIO.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\PIMColor.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\PIMEdge.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\PIMFile.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\PIMLog.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\PIMMask.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\PIMMath.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\PIMMemory.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\PIMPaint.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\PIMPoint.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\PIMRect.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\PIMString.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\PIMUtil.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\Table_sqrt.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\VersionInfo.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\warp.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\ImageProcess.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

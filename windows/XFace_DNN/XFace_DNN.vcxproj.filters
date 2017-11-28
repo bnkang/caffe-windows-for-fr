@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="libAlignment">
+      <UniqueIdentifier>{305fc321-5724-44af-8dfb-5e3c639d43c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libAlignment\common">
+      <UniqueIdentifier>{342a994b-42ad-445d-9f34-6314f43e6b08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libAlignment\common\inc">
+      <UniqueIdentifier>{38d05c39-f749-4efa-8d84-b79c2f58fd27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libAlignment\common\src">
+      <UniqueIdentifier>{e6d69503-10fa-4723-ba55-6cf80a60f957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libAlignment\alignment">
+      <UniqueIdentifier>{6911e2b6-4009-42eb-b45f-1b1345d58321}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libAlignment\alignment\inc">
+      <UniqueIdentifier>{80484f77-c4f0-4540-bf4e-f6f89e7d7dec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libAlignment\alignment\src">
+      <UniqueIdentifier>{2d23f397-e79c-4b78-b36d-41e5fbb28de5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libFaceRecognizer">
+      <UniqueIdentifier>{f5bad6e2-8b3a-4c1a-b95b-fc9bf03e4279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libFaceRecognizer\inc">
+      <UniqueIdentifier>{17d9aac1-11b8-4e79-b0a7-ac2b11532b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libFaceRecognizer\src">
+      <UniqueIdentifier>{d1b9d73b-072a-4edd-b9cc-44ac41d4d12a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="XFace_DNN.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="XFace_DNNDoc.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="XFace_DNNView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\define_op.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\EyeDetection.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\EyeDetectionParameters.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\EyeDetectionParameters_MCT_20090427_c_15x15.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\EyeDetectionParameters_Visible.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\FA_ImageProcess.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\FacePlatformInterface.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\FD_header.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\FD_task.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\HP.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\HP_Core.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\HP_Data.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\HP_Defines.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\HP_Interface.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\IRMB2_CodeTable.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\irmb3_table.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD.H">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_Core.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_Defines.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_Enroll.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_Global.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_ImageProcessing.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_Init.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_Interface.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_Likelihood_New.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_Memory.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD_Thread.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD2.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD2_data(9)_Accurate.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD2_data(9)_Fast.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\MVFD2_data(9)_Normal.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\Neon.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\pthread.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\sched.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\sdic_ImageProcess.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\common\src\semaphore.h">
+      <Filter>libAlignment\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\3D_face_shape.h">
+      <Filter>libAlignment\alignment\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\face_rejector_parameters.h">
+      <Filter>libAlignment\alignment\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\FaceRejector.h">
+      <Filter>libAlignment\alignment\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\FGlobalRegressor.h">
+      <Filter>libAlignment\alignment\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\FMat.h">
+      <Filter>libAlignment\alignment\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\Forest.h">
+      <Filter>libAlignment\alignment\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\IGlobalRegressor.h">
+      <Filter>libAlignment\alignment\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\IMat.h">
+      <Filter>libAlignment\alignment\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\LBF_FaceAlignment.h">
+      <Filter>libAlignment\alignment\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\LBF_parameters_ver1.01.h">
+      <Filter>libAlignment\alignment\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\LBFCommon.h">
+      <Filter>libAlignment\alignment\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\LBFTester.h">
+      <Filter>libAlignment\alignment\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\Node.h">
+      <Filter>libAlignment\alignment\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\targetver.h">
+      <Filter>libAlignment\alignment\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\Tree.h">
+      <Filter>libAlignment\alignment\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceAlignment_F\alignment\src\Util.h">
+      <Filter>libAlignment\alignment\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceRecognizer_V\inc\define.h">
+      <Filter>libFaceRecognizer\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceRecognizer_V\inc\FaceAligner.h">
+      <Filter>libFaceRecognizer\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceRecognizer_V\inc\FaceFeatureExtractor.h">
+      <Filter>libFaceRecognizer\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceRecognizer_V\inc\FaceRecognizer_TL_JointBayesian.h">
+      <Filter>libFaceRecognizer\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceRecognizer_V\inc\FR_Params.h">
+      <Filter>libFaceRecognizer\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="PIM\libFaceRecognizer_V\inc\MeanFeature.h">
+      <Filter>libFaceRecognizer\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CvImage.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Define_op.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="EnrollDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageProcess.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageProcessing.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowEnrollmentDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="XFace_DNN.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="XFace_DNNDoc.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="XFace_DNNView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\EyeDetection.cpp">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\FA_ImageProcess.cpp">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\HP.cpp">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\HP_Core.cpp">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\HP_Core_SSE.cpp">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\HP_Init.cpp">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD.CPP">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_Core.cpp">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_Core_SSE.cpp">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_Enroll.cpp">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_Global.cpp">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_Image.cpp">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_ImageProcessing.cpp">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_ImageProcessing_SSE.cpp">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_Init.cpp">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_memory.cpp">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_Thread.cpp">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\MVFD_Video.cpp">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\common\src\sdic_ImageProcess.cpp">
+      <Filter>libAlignment\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\FaceRejector.cpp">
+      <Filter>libAlignment\alignment\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\FGlobalRegressor.cpp">
+      <Filter>libAlignment\alignment\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\FMat.cpp">
+      <Filter>libAlignment\alignment\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\Forest.cpp">
+      <Filter>libAlignment\alignment\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\IGlobalRegressor.cpp">
+      <Filter>libAlignment\alignment\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\IMat.cpp">
+      <Filter>libAlignment\alignment\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\LBFCommon.cpp">
+      <Filter>libAlignment\alignment\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\LBFTester.cpp">
+      <Filter>libAlignment\alignment\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\Node.cpp">
+      <Filter>libAlignment\alignment\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\Tree.cpp">
+      <Filter>libAlignment\alignment\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceAlignment_F\alignment\src\Util.cpp">
+      <Filter>libAlignment\alignment\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceRecognizer_V\src\FaceAligner.cpp">
+      <Filter>libFaceRecognizer\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceRecognizer_V\src\FaceFeatureExtractor.cpp">
+      <Filter>libFaceRecognizer\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PIM\libFaceRecognizer_V\src\FaceRecognizer_TL_JointBayesian.cpp">
+      <Filter>libFaceRecognizer\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CvImage.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="EnrollDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcess.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcessing.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowEnrollmentDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="XFace_DNN.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\XFace_DNN.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\XFace_DNNDoc.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\XFace_DNN.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
